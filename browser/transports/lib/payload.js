@@ -1,4 +1,4 @@
-const jsonStringify = require('fast-safe-stringify')
+const jsonStringify = require('../../../base/lib/json-stringify')
 
 module.exports = report => {
   let payload = jsonStringify(report)
