@@ -66,7 +66,7 @@ module.exports = (opts, userPlugins = []) => {
   const bugsnag = new Client({ name, version, url }, finalSchema)
 
   // set transport based on browser capability (IE 8+9 have an XDomainRequest object)
-  bugsnag.transport(window.XDomainRequest ? transports.XDomainRequest : transports.XMLHttpRequest)
+  bugsnag.transport(global.XDomainRequest ? transports.XDomainRequest : transports.XMLHttpRequest)
 
   // set logger based on browser capability
   if (typeof console !== 'undefined' && typeof console.debug === 'function') {
