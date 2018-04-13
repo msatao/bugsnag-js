@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "bugsnag-js": "4",
+    "serve": "^6.5.5"
+  }
+}
